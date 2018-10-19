@@ -21,9 +21,9 @@ object TempData extends App {
 	val data = lines.map(parseLine).toArray
 	source.close()
 
-<<<<<<< HEAD
+
 	data.foreach(println)
-=======
+
 	val hotDay = data.maxBy(_.tmax)
 	println(hotDay)
 	val wetDay = data.maxBy(_.precip)
