@@ -1,4 +1,4 @@
-package scalaintro
+//package scalaintro
 
 import scala.io.Source
 import swiftvis2.plotting
@@ -20,6 +20,9 @@ object TempData extends App {
 	val lines = source.getLines.drop(2)
 	val data = lines.map(parseLine).toArray
 	source.close()
+
+
+	data.foreach(println)
 
 	val hotDay = data.maxBy(_.tmax)
 	println(hotDay)
@@ -77,4 +80,5 @@ object TempData extends App {
 	val words = "This is a test of your coding ability.".split(" ")
 	val chars = words.foldLeft(0)((acc, w) => acc+w.length)
 	
+>>>>>>> 92252218990c2abc7551e4e9a6cdd8778be1498b
 }
