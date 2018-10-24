@@ -80,5 +80,5 @@ object TempData extends App {
 	val words = "This is a test of your coding ability.".split(" ")
 	val chars = words.foldLeft(0)((acc, w) => acc+w.length)
 	
->>>>>>> 92252218990c2abc7551e4e9a6cdd8778be1498b
+
 }
