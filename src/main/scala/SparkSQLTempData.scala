@@ -6,7 +6,7 @@ import org.apache.spark.sql.functions._
 import org.apache.spark.sql.Column
 import org.apache.spark.sql._
 
-object TempDataStuff extends App {
+object SparkSQLTempData extends App {
   val spark = SparkSession.builder().master("local[*]").appName("Temp Data").getOrCreate()
   import spark.implicits._
   
